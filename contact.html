@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="electrical-website-template/lib/animate/animate.min.css" />
+    <link href="electrical-website-template/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="electrical-website-template/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="electrical-website-template/css/style.css" rel="stylesheet">
+    <style>
+        
+            *{
+    font-family: 'Times New Roman', Times, serif;
+} 
+        
+        .rounded-circle:hover {
+            border: 4px solid rgb(215, 8, 8);
+            transform: scale(1.1);
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+        }
+
+        .nav-link :hover {
+            color: red;
+
+        }
+
+        .redbtn:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        .nav-link:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .favbrands:hover {
+            color: red;
+
+        }
+
+        .fa-brands:hover {
+            transform: scale(1.5);
+            z-index: 3;
+
+        }
+
+        .fa-solid:hover {
+            transform: scale(1.5);
+            z-index: 3;
+        }
+
+        .accordion-button:focus {
+            outline: none !important;
+            border: 4px solid red;
+        }
+
+        .backBtn {
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+
+        }
+    </style>
+
+</head>
+
+
+<body >
+   
+
+
+
+    <!-- navbar -->
+    <div style=" z-index:2; background: linear-gradient(rgb(198, 0, 0),rgb(255, 37, 37),black,red);">
+        <nav class="navbar navbar-expand-lg " style="filter: opacity(90%);">
+            <div class="container-fluid" style="background-color: rgb(0, 0, 0);">
+                <img src="images/logo1.png" style="margin-bottom:10px;" alt="" height="100px" width="150px">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a href="index.html"
+                                style="color:aliceblue;"
+                                class="nav-link active " aria-current="page" 
+                                rel="noopener noreferrer"><b>Home</b></a>
+
+                        <li class="nav-item">
+                            <a href="aboutus.html" style="color: aliceblue;" class="nav-link" aria-current="page"
+                                 rel="noopener noreferrer"><b>About us</b></a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="contact.html" style="color: rgb(252, 4, 4); border-bottom: 2px solid red; transform: scale(1.1) ;" class="nav-link" aria-current="page" 
+                                rel="noopener noreferrer"><b>Contact Us</b></a>
+                        </li>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="gallery.html" style="color: aliceblue;" class="nav-link " aria-current="page"
+                                 rel="noopener noreferrer"><b>Gallery</b></a>
+                        </li>
+                    </ul>
+
+                    <!-- <button style="margin-right: 15px;" type="button" class="btn btn-outline-danger" data-aos="flip-left"><a href="login.html"></a> Login</button> -->
+
+                    <a href="login.html"><button data-aos="flip-left" type="button" style=" margin-right: 12px; border-radius: 5px;"
+                            class="btn btn-outline-danger"><i class="fa-solid fa-right-to-bracket"></i>
+                            Login</button>
+                    </a>
+
+                    <button data-aos="flip-left" type="button" style="margin-left: 3px;margin-right:12px; border-radius:5px;"
+                        class="btn btn-outline-danger position-relative"><i class="fa-solid fa-users"></i>
+                        Users
+                        <span id="usercount"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" >
+                    </button>
+
+
+
+                </div>
+            </div>
+        </nav>
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center bg-primary">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords"
+                                aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i
+                                    class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact <b
+                        style="color: red;">Us</b> </h4>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- Contact Start -->
+        <div class="container-fluid contact  py-5" style="background-image: url('images/backgroud.jpg'); background-repeat: no-repeat; background-size: cover;  background-attachment: fixed;">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div>
+                            <h4 class="text-danger">Contact Us</h4>
+                            <h1 class="display-4 mb-4" style="color: white;">Illuminate Your Message Get in Contact</h1>
+                            <p class="mb-5">Music is an art of sound in time that expresses ideas and emotions in
+                                significant forms through the elements of rhythm, melody, harmony, and color.
+                            </p>
+                            <div class="d-flex align-items-center mb-4">
+                                <a class="btn btn-danger btn-md-square me-3"
+                                    href="https://www.facebook.com/login.php/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-danger btn-md-square me-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-danger btn-md-square me-3"
+                                    href="https://www.instagram.com/accounts/login/?hl=en"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn btn-danger btn-md-square me-0" href="https://www.linkedin.com/login"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="row g-4">
+
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="d-inline-flex bg-white w-100 p-4">
+                                        <i class="fas fa-envelope fa-2x text-danger me-4"></i>
+                                        <div>
+                                            <h4>Mail Us</h4>
+                                            <p class="mb-0">music@blast.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="d-inline-flex bg-white w-100 p-4">
+                                        <i class="fa fa-phone-alt fa-2x text-danger me-4"></i>
+                                        <div>
+                                            <h4>Telephone</h4>
+                                            <p class="mb-0">(+012) 3456 7890 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
+                        <div>
+
+                            <form>
+                                <div class="row g-4">
+                                    <div class="col-lg-12 col-xl-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control border-0" id="name"
+                                                placeholder="Your Name">
+                                            <label for="name" style="outline:none;">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-xl-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control border-0" id="email"
+                                                placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-xl-6">
+                                        <div class="form-floating">
+                                            <input type="phone" class="form-control border-0" id="phone"
+                                                placeholder="Phone">
+                                            <label for="phone">Your Phone</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-xl-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control border-0" id="project"
+                                                placeholder="Project">
+                                            <label for="project">Your Project</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control border-0" id="subject"
+                                                placeholder="Subject">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control border-0" placeholder="Leave a message here"
+                                                id="message" style="height: 125px"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input-danger" type="checkbox" value=""
+                                                id="flexCheck">
+                                            <label class="form-check-label" for="flexCheck">I agree with the site
+                                                privacy policy</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-danger w-100 py-3">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11169.81654198003!2d67.0652637!3d24.9819581!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb340e584b891c3%3A0x29b2cbc198ba2dbd!2sAptech%20Computer%20Education%20North%20Karachi%20Center!5e1!3m2!1sen!2s!4v1729515639095!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        
+        <!-- FOOTER -->
+  <div style="background: linear-gradient(rgb(188, 0, 31),red,black,red); margin-bottom: 17px;">
+    <br>
+    <div class="container-fluid" style="background-color: black;">
+      <div class="container" style="color: aliceblue;">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 border-top "
+          style="background-color: rgb(0, 0, 0);">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+              <div class="mb-3 " data-aos="flip-left" style="margin-top: 0px;"><img src="images/logo1.png" alt=""
+                  height="160px">
+              </div>
+            </a>
+          </div>
+
+
+          <div class="col mb-3 mx-auto">
+            <h5 style="color: aliceblue;" data-aos="flip-left"><b>PAGES</b></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"> <a href="index.html" class="nav-link p-0 " style="color: aliceblue;"
+                  ></i><i class="fa-solid fa-home"
+                    style="color: red;"></i>&nbsp;&nbsp;&nbsp;Home</i></a> </li>
+              <li class="nav-item mb-2"> <a href="aboutus.html" class="nav-link p-0 " style="color: aliceblue;"
+                  ></i><i class="fa-solid fa-person"
+                    style="color: red;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us
+                  </i></a> </li>
+              <li class="nav-item mb-2"> <a href="contactus.html" class="nav-link p-0 " style="color: aliceblue;"
+                  ></i><i class="fa-solid fa-address-card"
+                    style="color: red;"></i>&nbsp;&nbsp;&nbsp;Contact Us
+                  </i></a> </li>
+              <li class="nav-item mb-2"> <a href="gallery.html" class="nav-link p-0 " style="color: aliceblue;"
+                  ></i><i class="fa-solid fa-photo-film"
+                    style="color: red;"></i>&nbsp;&nbsp;&nbsp;Gallery </i></a> </li>
+              <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 " style="color: aliceblue;">About</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col mb-3 mx-auto" style="margin-left: 50px;">
+            <h5 style="color: aliceblue;" data-aos="flip-left"><B>FOLLOW US ON</B></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a
+                  href="https://www.google.com/search?q=whatsapp&rlz=1C1UEAD_enPK1112PK1112&oq=whatsapp&gs_lcrp=EgZjaHJvbWUyDwgAEEUYORiDARixAxiABDINCAEQABiDARixAxiABDINCAIQABiDARixAxiABDINCAMQABiDARixAxiABDIHCAQQABiABDINCAUQABiDARixAxiABDINCAYQABiDARixAxiABDIGCAcQBRhA0gEINDUyN2owajeoAgiwAgE&sourceid=chrome&ie=UTF-8"
+                  class="nav-link p-0 " style="color: aliceblue;"><i class="fa-brands fa-whatsapp"
+                    style="color:rgb(153, 255, 0);"></i>&nbsp;&nbsp;&nbsp;Whatsapp</a></li>
+              <li class="nav-item mb-2"><a
+                  href="https://www.instagram.com/accounts/login/?next=%2Fproud.mp%2Ffeed%2F&source=profile_feed_tab"
+                  class="nav-link p-0 " style="color: aliceblue;"><i class="fa-brands fa-instagram"
+                    style="color: rgb(144, 61, 98);"></i> &nbsp;&nbsp;&nbsp;Instagram</a></li>
+              <li class="nav-item mb-2"><a href="https://www.facebook.com/?locale2=en_GB&_rdr" class="nav-link p-0 "
+                  style="color: aliceblue;"><i class="fa-brands fa-facebook"
+                    style="color:blue;"></i>&nbsp;&nbsp;&nbsp;Facebook</a></li>
+              <li class="nav-item mb-2"><a
+                  href="https://www.google.com/search?q=twitter+login&rlz=1C1UEAD_enPK1112PK1112&oq=twi&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMgYIARBFGDkyGAgCEC4YQxiDARjHARixAxjRAxiABBiKBTISCAMQABhDGIMBGLEDGIAEGIoFMg8IBBAAGEMYsQMYgAQYigUyDwgFEAAYQxixAxiABBiKBTIMCAYQABhDGIAEGIoFMgYIBxAFGEDSAQgzNDg0ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+                  class="nav-link p-0 " style="color: aliceblue;"><i class="fa-brands fa-x-twitter"
+                    style="color: aliceblue;"></i>&nbsp;&nbsp;&nbsp;Twitter</a></li>
+            </ul>
+          </div>
+
+          <div class="col mb-3 mx-auto">
+            <h5 style="color: aliceblue;" data-aos="flip-left"><b>CONTACT US</b></h5>
+            <br>
+            <input type="email" name="" id="" placeholder="Email">
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- second footer -->
+    <div class="text-center py-3" style="background-color: black; ">
+        <p style="color: aliceblue; margin:0px;"><i style="color: red;"
+            class="fa-regular fa-copyright"></i> &nbsp; &nbsp; 2024 SOUND BLAST, Inc. All rights reserved. </p>
+      </div>
+        <!-- Contact End -->
+
+        <script>
+            for (var i = 1; i <= 1424; i++) {
+                (function (index) {
+                    setTimeout(function () {
+                        document.getElementById('usercount').innerHTML = index;
+                    }, index * 7); // 3 seconds interval
+                })(i);
+            }
+        </script>
+
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="electrical-website-template/lib/wow/wow.min.js"></script>
+        <script src="electrical-website-template/lib/easing/easing.min.js"></script>
+        <script src="electrical-website-template/lib/waypoints/waypoints.min.js"></script>
+        <script src="electrical-website-template/lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+</body>
+
+</html>
